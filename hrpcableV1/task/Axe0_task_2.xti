@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4018.0" ClassName="CAddTaskDef" SubType="0">
+	<Task Id="2" Priority="2" CycleTime="100000" AmsPort="301">
+		<Name>Axe0_task</Name>
+		<Vars VarGrpType="1" InsertType="1">
+			<Name>Entrées</Name>
+		</Vars>
+		<Vars VarGrpType="2" InsertType="1">
+			<Name>Sorties</Name>
+			<Var>
+				<Name>Master control word</Name>
+				<Type>UINT</Type>
+			</Var>
+		</Vars>
+		<Image Id="3" AddrType="1" ImageType="1" SizeOut="2">
+			<Name>Image</Name>
+		</Image>
+	</Task>
+	<Mappings>
+		<OwnerA Name="__THIS__">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Axe0 (AX5112-0000-0203)">
+				<Link VarA="Outputs^Master control word" VarB="MDT^Master control word"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmItem>

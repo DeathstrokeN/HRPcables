@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4018.0" ClassName="CAddTaskDef" SubType="0">
+	<Task Id="1" Priority="1" CycleTime="100000" AmsPort="301">
+		<Name>MainTask</Name>
+		<Vars VarGrpType="1" InsertType="1">
+			<Name>Entrées</Name>
+			<Var>
+				<Name>D0_Drive_Status_Word</Name>
+				<Type>UINT</Type>
+			</Var>
+			<Var>
+				<Name>D0_Position_feedback_1_value</Name>
+				<Type>DINT</Type>
+				<BitOffs>16</BitOffs>
+				<ExternalAddress>2</ExternalAddress>
+			</Var>
+			<Var>
+				<Name>D0_Following_distance</Name>
+				<Type>DINT</Type>
+				<BitOffs>48</BitOffs>
+				<ExternalAddress>6</ExternalAddress>
+			</Var>
+			<Var>
+				<Name>D0_Velocity _feedback_value_1</Name>
+				<Type>DINT</Type>
+				<BitOffs>80</BitOffs>
+				<ExternalAddress>10</ExternalAddress>
+			</Var>
+			<Var>
+				<Name>D0_Torque_feedback_value</Name>
+				<Type>INT</Type>
+				<BitOffs>112</BitOffs>
+				<ExternalAddress>14</ExternalAddress>
+			</Var>
+			<Var>
+				<Name>D0_Motor_temperature</Name>
+				<Type>UINT</Type>
+				<BitOffs>128</BitOffs>
+				<ExternalAddress>16</ExternalAddress>
+			</Var>
+			<Var>
+				<Name>D0_Digital_inputs_state</Name>
+				<Type>INT</Type>
+				<BitOffs>144</BitOffs>
+				<ExternalAddress>18</ExternalAddress>
+			</Var>
+		</Vars>
+		<Vars VarGrpType="2" InsertType="1">
+			<Name>Sorties</Name>
+			<Var>
+				<Name>D0_Master_control_word</Name>
+				<Type>UINT</Type>
+			</Var>
+			<Var>
+				<Name>D0_Position_command_value</Name>
+				<Type>DINT</Type>
+				<BitOffs>16</BitOffs>
+				<ExternalAddress>2</ExternalAddress>
+			</Var>
+			<Var>
+				<Name>D0_Velocity_command_value</Name>
+				<Type>DINT</Type>
+				<BitOffs>48</BitOffs>
+				<ExternalAddress>6</ExternalAddress>
+			</Var>
+			<Var>
+				<Name>D0_Torque_command_value</Name>
+				<Type>INT</Type>
+				<BitOffs>80</BitOffs>
+				<ExternalAddress>10</ExternalAddress>
+			</Var>
+			<Var>
+				<Name>D0_Digital_outputs</Name>
+				<Type>INT</Type>
+				<BitOffs>96</BitOffs>
+				<ExternalAddress>12</ExternalAddress>
+			</Var>
+		</Vars>
+		<Image Id="1" AddrType="1" ImageType="1" SizeIn="20" SizeOut="14">
+			<Name>Image</Name>
+		</Image>
+	</Task>
+</TcSmItem>
